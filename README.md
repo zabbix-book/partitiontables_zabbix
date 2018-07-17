@@ -67,6 +67,12 @@ MariaDB [zabbix]>
 if you see this,everything is OK.
 
 # 4. other
+```
+sshell# crontab -e
+1 0 * * * /usr/sbin/partitiontables_zabbix.sh
+Shell# chmod 700 /usr/sbin/partitiontables_zabbix.sh
+```
+# 5. other
 if you database is so big,you should clean data,then run this scripts
 ```
 mysql> use zabbix; 
