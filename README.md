@@ -66,7 +66,7 @@ MariaDB [zabbix]>
 ```
 if you see this,everything is OK.
 
-# 4. other
+# 4. crontab
 ```
 sshell# crontab -e
 1 0 * * * /usr/sbin/partitiontables_zabbix.sh
