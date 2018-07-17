@@ -1,6 +1,6 @@
 #!/bin/bash
 # author: itnihao
-# mail: itnihao@qq.com
+# mail: itnihao#qq.com
 # date: 2018-06-06
 # funtion: create parition for zabbix MySQL 
 
