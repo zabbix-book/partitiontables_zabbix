@@ -3,6 +3,7 @@
 # mail: itnihao#qq.com
 # date: 2018-06-06
 # funtion: create parition for zabbix MySQL 
+# repo: https://github.com/zabbix-book/partitiontables_zabbix
 
 #配置环境变量
 ZABBIX_USER="zabbix"
