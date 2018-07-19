@@ -1,6 +1,7 @@
 #!/bin/bash
 # author: itnihao
 # mail: itnihao#qq.com
+# Apache License Version 2.0
 # date: 2018-06-06
 # funtion: create parition for zabbix MySQL 
 # repo: https://github.com/zabbix-book/partitiontables_zabbix
