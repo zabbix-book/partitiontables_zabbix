@@ -68,13 +68,14 @@ MariaDB [zabbix]>
 ```
 if you see this,everything is OK.
 
-# 4. crontab
+# 4. set crontab
+the crontab remove old partitions every day
 ```
-sshell# crontab -e
+shell# crontab -e
 1 0 * * * /usr/sbin/partitiontables_zabbix.sh
 Shell# chmod 700 /usr/sbin/partitiontables_zabbix.sh
 ```
-# 5. other
+# 5. truncate table
 if you database is so big,you should clean data,then run this scripts
 ```
 mysql> use zabbix; 
@@ -91,4 +92,3 @@ mysql> optimize table trends_uint;
 mysql> truncate table events; 
 mysql> optimize table events;
 ```
-#
