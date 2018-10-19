@@ -26,7 +26,7 @@ TREND_TABLE="trends trends_uint"
 #MYSQL连接命令
 MYSQL_CMD=$(echo ${MYSQL_BIN} -u${ZABBIX_USER} -p${ZABBIX_PWD} -P${ZABBIX_PORT} -h${ZABBIX_HOST} ${ZABBIX_DB})
 
-function create_parttions_history() {
+function create_partitions_history() {
     #给历史表创建分区
     for PARTITIONS_CREATE_EVERY_DAY in $(date +"%Y%m%d") $(date +"%Y%m%d" --date='1 days') $(date +"%Y%m%d" --date='2 days') $(date +"%Y%m%d" --date='3 days')  $(date +"%Y%m%d" --date='4 days') $(date +"%Y%m%d" --date='5 days') $(date +"%Y%m%d" --date='6 days') $(date +"%Y%m%d" --date='7 days')
     do
@@ -67,7 +67,7 @@ function create_parttions_history() {
     done
 }
 
-function drop_parttions_history() {
+function drop_partitions_history() {
     #删除历史表分区
     for PARTITIONS_DELETE_DAYS_AGO in $(date +"%Y%m%d" --date="${HISTORY_DAYS} days ago")
     do
@@ -89,7 +89,7 @@ function drop_parttions_history() {
     done
 }
 
-function create_parttions_trend() {
+function create_partitions_trend() {
     #创建趋势表分区
     for PARTITIONS_CREATE_EVERY_MONTHS in $(date +"%Y%m") $(date +"%Y%m" --date='1 months') $(date +"%Y%m" --date='2 months') $(date +"%Y%m" --date='3 months') $(date +"%Y%m" --date='4 months') $(date +"%Y%m" --date='5 months')
     do
@@ -153,10 +153,10 @@ function drop_parttions_trend() {
 }
 
 function main() {
-    create_parttions_history
-    create_parttions_trend
-    drop_parttions_history
-    drop_parttions_trend
+    create_partitions_history
+    create_partitions_trend
+    drop_partitions_history
+    drop_partitions_trend
 }
 
 main
