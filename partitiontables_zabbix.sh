@@ -130,7 +130,7 @@ function create_partitions_trend() {
     done
 }
 
-function drop_parttions_trend() {
+function drop_partitions_trend() {
     #删除趋势表分区
     for PARTITIONS_DELETE_MONTHS_AGO in $(date +"%Y%m" --date="${TREND_MONTHS} months ago")
     do
