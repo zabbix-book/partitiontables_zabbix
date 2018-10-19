@@ -1,8 +1,6 @@
 # partitiontables_zabbix
-This is a scripts for partitiontables of MySQL for zabbix2.2 3.0 3.2 3.4 4.0   
-I test it on Zabbix 3.0 4.0 of MySQL 5.6 and MySQL 5.7  
-本项目是《Zabbix企业级分布式监控系统》第2版中第3章节中的代码，  
-如需使用，请注明出处即可，遵循Apache 2.0开源协议     
+This is a scripts for partitiontables of MySQL for zabbix2.2 3.0 3.2 3.4 4.0,test it on Zabbix 3.0 4.0 of MySQL 5.6 and MySQL 5.7  
+本项目是《Zabbix企业级分布式监控系统》第2版中第3章节中的代码，如需使用，请注明出处即可，遵循Apache 2.0开源协议     
 
 # 1. configration 
 Before run this scripts,maybe you should modify it
@@ -23,7 +21,7 @@ TREND_MONTHS=12
 ```
 # 2. run it
 ```
-shell# sh partitiontables_zabbix.sh 
+shell# bash partitiontables_zabbix.sh 
 table history      create partitions p20180716
 table history_log  create partitions p20180716
 table history_str  create partitions p20180716
