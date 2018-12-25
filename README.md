@@ -87,6 +87,4 @@ mysql> truncate table trends;
 mysql> optimize table trends; 
 mysql> truncate table trends_uint; 
 mysql> optimize table trends_uint; 
-mysql> truncate table events; 
-mysql> optimize table events;
 ```
