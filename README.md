@@ -73,8 +73,8 @@ shell# crontab -e
 1 0 * * * /usr/sbin/partitiontables_zabbix.sh
 Shell# chmod 700 /usr/sbin/partitiontables_zabbix.sh
 ```
-# 5. truncate table
-if you database is so big,you should clean data,then run this scripts
+# truncate table(only with delete data)
+if you database is so big,you should clean data first,then run this scripts
 ```
 mysql> use zabbix; 
 mysql> truncate table history; 
